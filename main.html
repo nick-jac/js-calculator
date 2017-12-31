@@ -2,37 +2,42 @@
 <html>
 	<head>
         <title>Calculator</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-	</head>
+        <script type="text/javascript" src="main2.js"></script> 
+   </head>
 	<body>
-		<div id="calculator">
-		 <div id="total"></div>
-		 <div id="operators">
-		  <a>+</a>
-		  <a>-</a>
-		  <a>/</a>
-		  <a>*</a>
-		  <a>=</a>
-		 </div>
-		 <div id="numbers">
-		  <a>1</a>
-		  <a>2</a>
-		  <a>3</a>
-		  <a>4</a>
-		  <a>5</a>
-		  <a>6</a>
-		  <a>7</a>
-		  <a>8</a>
-		  <a>9</a>
-		  <a id="clear">C</a>
-		  <a>0</a>
-		  <a id="clearall">AC</a>
-		 </div>
-        </div>
+        <center>
+
+        <div>
+         <form name="Calculator">
+         <input name="display" placeholder="0" id="one">
+         <br>
+          <input type="button" value="7" onClick="document.Calculator.display.value+='7'"/>
+          <input type="button" value="8" onClick="document.Calculator.display.value +='8'"/>
+          <input type="button" value="9" onclick="document.Calculator.display.value +='9'"/>
+          <input type="button" value="+" onclick="btnplus()"/>
+         <br/>
+          <input type="button" value="4" onclick="document.Calculator.display.value +='4'"/>
+          <input type="button" value="5" onclick="document.Calculator.display.value +='5'"/>
+          <input type="button" value="6" onclick="document.Calculator.display.value +='6'"/>
+          <input type="button" value="-" onclick="btnsub()"/>
+         <br/>
+          <input type="button" value="1" onclick="document.Calculator.display.value +='1'"/>
+          <input type="button" value="2" onclick="document.Calculator.display.value +='2'"/>
+          <input type="button" value="3" onclick="document.Calculator.display.value +='3'"/>
+          <input type="button" value="*" onclick="btnmult()"/>
+         <br/>
+          <input type="button" value="0" onclick="document.Calculator.display.value +='0'"/>
+          <input type="button" value="%" onclick="btnmod()"/>
+          <input type="button" value="." onclick="btndot()"/>
+          <input type="button" value="/" onclick="btndiv()"/>
+         <br/>
+          <input type="button" value="=" onclick="document.Calculator.display.value = eval(document.Calculator.display.value)" id="two"/>
+          <input type="button" value="Del" onclick="btnclear()" id="two"/>
+        </div> 
+        </form>		
         <marquee>
             <strong>
-                This is a non working calculator at the moment, I would like it to be a working calculator soon!
+                This is a now an almost working calculator, I now need to make it look like a calculator and fix the percentage calculations!
             </strong>
         </marquee>
 	</body>
