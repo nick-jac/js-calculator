@@ -1,4 +1,3 @@
-
 function btnplus() {
     document.Calculator.display.value +="+";
     document.Calculator.display.style.textAlign="right";
@@ -14,7 +13,7 @@ function btnmult() {
     document.Calculator.display.style.textAlign="right";
 }
 
-function btnmod() {
+function btnMod() {
     document.Calculator.display.value +="%";
     document.Calculator.display.style.textAlign="right";
 }
